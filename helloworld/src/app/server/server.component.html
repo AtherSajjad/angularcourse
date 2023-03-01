@@ -1,0 +1,8 @@
+<p
+  [ngClass]="{
+    online: element.serverStatus === 'online',
+    offline: element.serverStatus === 'offline'
+  }"
+>
+  Server Id {{ element.serverId }} is {{ element.serverStatus }}
+</p>

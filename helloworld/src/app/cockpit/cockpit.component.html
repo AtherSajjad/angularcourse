@@ -1,0 +1,9 @@
+<p>Server Name</p>
+<input type="text" class="form-control" [(ngModel)]="serverName" />
+<button
+  class="btn btn-primary"
+  [disabled]="serverName.length==0"
+  (click)="onAddNewServer()"
+>
+  Add Servers
+</button>

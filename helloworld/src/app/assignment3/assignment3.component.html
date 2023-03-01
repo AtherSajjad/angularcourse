@@ -1,0 +1,13 @@
+<p>Assignment 3</p>
+<button class="btn btn-primary" (click)="onDisplayClicked()">
+  Display Details
+</button>
+<p *ngIf="showSecret">Secret code: tuna fish</p>
+
+<p
+  [ngClass]="{ colorWhite: indexOfelement >= 4 }"
+  [ngStyle]="{ backgroundColor: indexOfelement >= 4 ? 'blue' : 'inherit' }"
+  *ngFor="let x of logs; let indexOfelement = index"
+>
+  {{ x }}
+</p>
