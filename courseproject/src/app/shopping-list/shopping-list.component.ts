@@ -2,8 +2,8 @@ import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Store } from '@ngrx/store';
 import { Observable, Subscription } from 'rxjs';
 import { Ingredient } from '../shared/ingredient.model';
-import * as ShoppingListActions from './shopping-list.actions';
-import { AppState } from './shopping-list.reducer';
+import { AppState } from '../store/app.reducer';
+import * as ShoppingListActions from './store/shopping-list.actions';
 
 @Component({
   selector: 'app-shopping-list',

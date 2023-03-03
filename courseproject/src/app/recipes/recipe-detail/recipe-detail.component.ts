@@ -1,8 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { ActivatedRoute, Router } from '@angular/router';
 import { Store } from '@ngrx/store';
-import * as ShoppingListActions from 'src/app/shopping-list/shopping-list.actions';
-import { AppState } from 'src/app/shopping-list/shopping-list.reducer';
+import * as ShoppingListActions from 'src/app/shopping-list/store/shopping-list.actions';
+import { AppState } from 'src/app/store/app.reducer';
 import { Recipe } from '../recipe.model';
 import { RecipesService } from '../recipes.service';
 
